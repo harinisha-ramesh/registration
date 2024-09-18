@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View user</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="sidebar">
+        <ul id="sidebar-menu">
+            <a href="home.html">Home</a>
+            <a href="viewuser.html">View User</a>
+            <a href="creategroup.html">Create Group</a>
+            <a href="createrole.html">Create Role</a>
+            <a href="viewrole.html">View Role</a>
+        </ul>
+    </div>
+    <div id="container">
+        <header>
+            <h1>List of Users</h1>
+        </header>
+        <main>
+            <section id="userList">
+                <div id="no-user-container">
+                    <p id="no-user-message">No User Available</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <div id="edit-popup" style="display: none;">
+        <div class="popup-content">
+            <h2>Edit User</h2>
+            <form id="edit-form">
+                <label for="edit-username">Username:</label>
+                <input type="text" id="edit-username" name="username" autocomplete="off"><br>
+                <label for="edit-email">Email:</label>
+                <input type="email" id="edit-email" name="email" autocomplete="off"><br>
+                <label for="edit-password">Password:</label>
+                <input type="password" id="edit-password" name="password" autocomplete="off"><br>
+                <label for="edit-firstname">First Name:</label>
+                <input type="text" id="edit-firstname" name="firstname" autocomplete="off"><br>
+                <label for="edit-lastname">Last Name:</label>
+                <input type="text" id="edit-lastname" name="lastname" autocomplete="off"><br>
+                <button type="button" id="save-edit">Save</button>
+                <button type="button" id="cancel-edit">Cancel</button>
+            </form>
+        </div>
+    </div>
+    <div id="toast" style="display:none;"></div>
+    <div id="confirmation-dialog">
+        <div class="dialog-content">
+            <p class="dialog-message"></p>
+            <button class="yes-button">Yes</button>
+            <button class="no-button">No</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,399 @@
+body,html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #f5f5f5;
+    margin: 0;
+    width: 100%;
+}
+
+/* Sidebar Styling */
+#sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 15%;
+    height: 100%;
+    background-color: #463636;
+    padding-top: 20px;
+}
+
+#sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+    gap: 20px;
+}
+
+#sidebar-menu a {
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-decoration: none; /* Removes underline */
+    color: #141414;
+    background-color: #d8bf88;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#sidebar-menu a:hover {
+    background-color: #a57044;
+    color: white;
+}
+
+/* User Info Container Styling */
+#userInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    width: 500px;
+    margin-left: 220px; /* Adjusted for the sidebar width */
+    background-color: rgb(207, 203, 199);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+ #add-button{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #308033;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #141414 ;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+#toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: none;
+}
+/* Container Styling */
+#container {
+    width: 85%; /* Set the width to 70% of the available space */
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    margin-left: 15%;
+}
+
+/* Header Styling */
+header {
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 20px; 
+    height: 15%;
+
+}
+
+header h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 0; 
+
+}
+/* No User Available Styling */
+#no-user-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35%;
+    background-color: #e0e0e0;
+    border: 1px solid #201f1f;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 40px; 
+    text-align: center;
+    width: 60%;
+}
+
+#no-user-message {
+    font-size: 28px;
+    color: #242041;
+    font-weight: bold;
+}
+
+
+main{
+    height: 90%;
+    width: 100%;
+}
+
+#userList {
+    
+    height: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#userList li {  
+    background-color: #fdf7f7d7;
+    border: 1px solid #7a7777; 
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    
+    width: 60%;
+}
+#userList li > strong {
+    font-weight: bold; /* Make the username bold */
+}
+#userList .button-container {
+    display: flex;
+    gap: 10px;
+    
+}
+.view-details {
+    background-color: #0b2772;
+    color: white;
+    font-weight: lighter;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+.view-details:hover {
+    background-color: rgb(16, 37, 156);
+}
+.edit {
+    background-color: rgb(57, 139, 57);
+    color: white;
+    font-weight: lighter;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+.edit:hover {
+    background-color: rgb(45, 108, 45);
+}
+.delete {
+    background-color: rgb(173, 55, 55);
+    color: white;
+    font-weight: lighter;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+.delete:hover {
+    background-color: rgb(155, 20, 20);
+}
+/* User Details Styling */
+.user-details {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.user-details p {
+    margin: 5px 0;
+}
+
+.user-details p > strong {
+    font-weight: bold; /* Bold text for labels */
+}
+
+
+.close-details {
+    background-color: #e74c3c; /* Red color for Close button */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.close-details:hover {
+    background-color: #c0392b; /* Darker red for hover effect */
+}
+/* General styling for the confirmation dialog background */
+#confirmation-dialog {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow:auto;
+    background-color:white ;
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 60px;
+}
+
+/* Styling for the dialog content box */
+.dialog-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid gray;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 70%;
+    overflow-y: auto;
+}
+
+/* Styling for the message text */
+.dialog-message {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* General styling for buttons */
+.yes-button,
+.no-button {
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Specific styling for "Yes" button */
+.yes-button {
+    background: #1d7c34; /* Green color for confirmation */
+}
+
+/* Specific styling for "No" button */
+.no-button {
+    background: #b32735; /* Red color for cancellation */
+}
+
+/* Button hover effects */
+.yes-button:hover,
+.no-button:hover {
+    opacity: 0.8;
+}
+
+/* Remove outline on focus for buttons */
+.yes-button:focus,
+.no-button:focus {
+    outline: none;
+}
+#edit-popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow:auto;
+    background-color:white ;
+    background-color: rgba(0,0,0,0.5);
+    padding-top: 60px;
+}
+/* Popup content styles */
+.popup-content {
+    background-color: white;
+    margin: 10%;
+    padding: 20px;
+    border: 1px solid gray;
+    width: 30%;
+    border-radius: 10px;
+    position: fixed; 
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    
+}
+/* Styling for form labels and inputs */
+#edit-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+#edit-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/* Button styling */
+#edit-form button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+}
+#save-edit {
+    background: #255a27; /* Green color */
+}
+
+#cancel-edit {
+    background: #a32a21; /* Red color */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    #sidebar {
+        width: 150px;
+    }
+
+    #userInfo{
+        margin-left: 170px;
+        width: calc(100% - 170px); /* Adjusted for smaller screens */
+    }
+    #container {
+        margin-left: 150px; /* Adjusted for smaller screens */
+        width: calc(100% - 150px); /* Adjusted for smaller screens */
+    }
+}
