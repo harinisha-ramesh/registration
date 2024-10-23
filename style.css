@@ -342,6 +342,8 @@ main{
 .popup-content {
     background-color: white;
     margin: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
     padding: 20px;
     border: 1px solid gray;
     width: 30%;
