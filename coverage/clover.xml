@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1724232187955" clover="3.2.0">
-  <project timestamp="1724232187955" name="All files">
+<coverage generated="1729674663348" clover="3.2.0">
+  <project timestamp="1729674663348" name="All files">
     <metrics statements="114" coveredstatements="107" conditionals="32" coveredconditionals="27" methods="23" coveredmethods="22" elements="169" coveredelements="156" complexity="0" loc="114" ncloc="114" packages="1" files="1" classes="1"/>
     <file name="script.js" path="C:\Users\Lenovo\Desktop\registration\js\script.js">
       <metrics statements="114" coveredstatements="107" conditionals="32" coveredconditionals="27" methods="23" coveredmethods="22"/>

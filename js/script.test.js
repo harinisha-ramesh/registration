@@ -30,7 +30,7 @@ describe('Sidebar HTML Structure', () => {
       const expectedLinks = [
           { href: 'home.html', text: 'Home' },
           { href: 'viewuser.html', text: 'View User' },
-          { href: 'creategroup.html', text: 'Create Group' },
+          { href: 'group.html', text: 'Create Group' },
           { href: 'createrole.html', text: 'Create Role' },
           { href: 'viewrole.html', text: 'View Role' },
       ];
